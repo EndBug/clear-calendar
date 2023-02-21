@@ -7,5 +7,7 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["activeTab", "scripting"]
+  "action": {},
+  "permissions": ["scripting"],
+  "host_permissions": ["https://calendar.google.com/*"]
 }
