@@ -1,0 +1,20 @@
+{
+  "name": "clear-calendar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Chromium extension that lets you turn off event title in Google Calendar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EndBug/clear-calendar.git"
+  },
+  "author": "Federico Grandi <fgrandi30@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EndBug/clear-calendar/issues"
+  },
+  "homepage": "https://github.com/EndBug/clear-calendar#readme"
+}
