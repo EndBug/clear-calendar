@@ -2,7 +2,7 @@
   "name": "clear-calendar",
   "version": "1.0.0",
   "private": true,
-  "description": "A Chromium extension that lets you turn off event title in Google Calendar",
+  "description": "A Chromium extension that lets you turn off event titles in Google Calendar",
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && npm run compile && cp -r public/* dist/",
