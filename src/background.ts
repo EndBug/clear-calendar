@@ -26,23 +26,22 @@ function changeOpacity(opacity: number) {
     .join(',')} {opacity: ${opacity} !important;}`;
 }
 
-chrome.runtime.onInstalled.addListener(() => {
-  chrome.action.setBadgeText({
-    text: 'OFF',
-  });
-});
-
 chrome.action.onClicked.addListener(async tab => {
-  const nextBadgeText =
-    (await chrome.action.getBadgeText({tabId: tab.id})) === 'ON' ? 'OFF' : 'ON';
+  if (tab.url?.startsWith('https://calendar.google.com/')) {
+    const nextBadgeText =
+      ((await chrome.action.getBadgeText({tabId: tab.id})) || 'OFF') === 'ON'
+        ? 'OFF'
+        : 'ON';
 
-  await chrome.action.setBadgeText({
-    text: nextBadgeText,
-  });
+    await chrome.action.setBadgeText({
+      text: nextBadgeText,
+      tabId: tab.id,
+    });
 
-  await chrome.scripting.executeScript({
-    target: {tabId: tab.id as number},
-    func: changeOpacity,
-    args: [nextBadgeText === 'ON' ? 0 : 1],
-  });
+    await chrome.scripting.executeScript({
+      target: {tabId: tab.id as number},
+      func: changeOpacity,
+      args: [nextBadgeText === 'ON' ? 0 : 1],
+    });
+  }
 });
