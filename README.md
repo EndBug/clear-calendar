@@ -9,10 +9,17 @@
       <img alt="Chrome Web Store" src="https://img.shields.io/chrome-web-store/v/igokphnjmioaekmakimhfopjkleneooa">
     </a>
   </p>
-  <br/>
+
   <p>
-    Download on Chrome Web Store (PENDING)
+    Download:
     <br>
-    <a href="https://github.com/EndBug/clear-calendar/releases">Download from GitHub</a>
+    Chrome Web Store (PENDING)
+    |
+    <a href="https://github.com/EndBug/clear-calendar/releases">GitHub</a>
   </p>
 </div>
+
+## Screenshots
+
+![](docs/screenshots/001.png)
+
