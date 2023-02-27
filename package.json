@@ -24,7 +24,7 @@
   "homepage": "https://github.com/EndBug/clear-calendar#readme",
   "dependencies": {
     "@types/chrome": "^0.0.217",
-    "@types/node": "^18.14.0",
+    "@types/node": "^18.14.2",
     "gts": "^3.1.1",
     "rimraf": "^4.1.2",
     "typescript": "~4.9.5"
