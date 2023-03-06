@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/EndBug/clear-calendar#readme",
   "dependencies": {
-    "@types/chrome": "^0.0.217",
+    "@types/chrome": "^0.0.219",
     "@types/node": "^18.14.2",
     "gts": "^3.1.1",
     "rimraf": "^4.1.2",
