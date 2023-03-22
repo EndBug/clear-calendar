@@ -34,7 +34,7 @@ jobs:
           upload-release-files: true
           release-upload-url: ${{ github.event.release.upload_url }}
           filename: clear-calendar-${{ github.event.release.tag_name }}
-      - uses: Klemensas/chrome-extension-upload-action@$VERSION
+      - uses: Klemensas/chrome-extension-upload-action@v1.3
         with:
           refresh-token: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
           client-id: ${{ secrets.GOOGLE_CLIENT_ID }}
