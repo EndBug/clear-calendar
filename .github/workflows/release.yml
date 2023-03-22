@@ -25,7 +25,7 @@ jobs:
       - run: echo "filename=clear-calendar-${{ github.event.release.tag_name }}.zip" >> $GITHUB_ENV
       - uses: thedoctor0/zip-release@0.7.1
         with:
-          filename: ${{ env.filename }
+          filename: ${{ env.filename }}
           path: dist
       - uses: nanoufo/action-upload-artifacts-and-release-assets@v1.7
         with:
