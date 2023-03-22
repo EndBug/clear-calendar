@@ -13,7 +13,7 @@
   <p>
     Download:
     <br>
-    Chrome Web Store (PENDING)
+    <a href="https://chrome.google.com/webstore/detail/clear-calendar/igokphnjmioaekmakimhfopjkleneooa">Chrome Web Store</a>
     |
     <a href="https://github.com/EndBug/clear-calendar/releases">GitHub</a>
   </p>
