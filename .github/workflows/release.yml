@@ -39,11 +39,3 @@ jobs:
           release-upload-url: ${{ github.event.release.upload_url }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: Klemensas/chrome-extension-upload-action@v1.3
-        with:
-          refresh-token: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
-          client-id: ${{ secrets.GOOGLE_CLIENT_ID }}
-          client-secret: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-          file-name: ${{ env.filename }}
-          app-id: 'igokphnjmioaekmakimhfopjkleneooa'
-          publish: true
