@@ -31,11 +31,9 @@ jobs:
         with:
           filename: ${{ env.filename }}
           path: dist
-      - uses: nanoufo/action-upload-artifacts-and-release-assets@v1.7
+      - uses: nanoufo/action-upload-artifacts-and-release-assets@v1.8
         with:
           path: ${{ env.filename }}
           if-no-files-found: error
           upload-release-files: true
           release-upload-url: ${{ github.event.release.upload_url }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
