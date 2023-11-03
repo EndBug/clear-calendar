@@ -25,7 +25,7 @@
   "dependencies": {
     "@types/chrome": "^0.0.248",
     "@types/node": "^18.16.3",
-    "gts": "^5.0.1",
+    "gts": "^5.2.0",
     "rimraf": "^5.0.5",
     "typescript": "~5.2.2"
   }
