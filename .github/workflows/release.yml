@@ -27,7 +27,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: echo "filename=clear-calendar-${{ github.event.release.tag_name }}.zip" >> $GITHUB_ENV
-      - uses: thedoctor0/zip-release@0.7.5
+      - uses: thedoctor0/zip-release@0.7.6
         with:
           filename: ${{ env.filename }}
           path: dist
