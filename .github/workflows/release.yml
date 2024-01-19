@@ -31,7 +31,7 @@ jobs:
         with:
           filename: ${{ env.filename }}
           path: dist
-      - uses: nanoufo/action-upload-artifacts-and-release-assets@v1.9
+      - uses: nanoufo/action-upload-artifacts-and-release-assets@v2.0
         with:
           path: ${{ env.filename }}
           if-no-files-found: error
